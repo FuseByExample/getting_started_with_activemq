@@ -6,8 +6,10 @@ include: Master-Slave, Network of Brokers, and Network of Master-Slave Brokers. 
 JMS Queue (point to point) message producer and message consumer.
 
 Notes:
+
 * all instructions assume you are executing from the top level directory of this project
 * it is assumed you have Apache Maven installed, and that you are familiar with its usage
+* assumes you are using ActiveMQ 5.5.0 or later
 
 The Master-Slave configuration enables quick activation of a broker instance to continue processing of messages stored
 within a message persistence store. It utilizes a shared file system, in this case the same local directory, with both
