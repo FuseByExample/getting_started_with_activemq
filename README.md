@@ -19,16 +19,20 @@ and all subsequent broker instances waiting for the file lock are considered 'sl
 To run this sample,
 
 Start the 'master' broker
-> <activemq_home>/bin/activemq console xbean:file:conf/activemq-failover1.xml
+
+    > <activemq_home>/bin/activemq console xbean:file:conf/activemq-failover1.xml
 
 Start the 'slave' broker
-> <activemq_home>/bin/activemq console xbean:file:conf/activemq-failover2.xml
+
+    > <activemq_home>/bin/activemq console xbean:file:conf/activemq-failover2.xml
 
 Start the message consumer
-> mvn -P consumer
+
+    > mvn -P consumer
 
 Start the message producer
-> mvn -P producer
+
+    > mvn -P producer
 
 The message producer is coded to send 100 messages. The consumer will log the messages it receives, and will timeout and
 exit after 120 seconds of inactivity (no messages received). To test failover, kill (Ctrl+C) the current master broker
@@ -48,16 +52,20 @@ consumer is connected to. The clients have been configured to connect to differe
 To run this sample,
 
 Start the first broker
-> <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob1.xml
+
+    > <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob1.xml
 
 Start the second broker
-> <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob2.xml
+
+    > <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob2.xml
 
 Start the message consumer
-> mvn -P consumer-nwob
+
+    > mvn -P consumer-nwob
 
 Start the message producer
-> mvn -P producer-nwob
+
+    > mvn -P producer-nwob
 
 You can test the brokers forwarding messages by randomly killing and restarting broker instances. You'll see messages
 stop when the broker is stopped, and you'll see any sent messages forwarded when the brokers are restarted and the
@@ -72,19 +80,25 @@ of Brokers with quick access to persistent messages of Master-Slave.
 To run this sample,
 
 Start the first 'master' broker
-> <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms1a.xml
+
+    > <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms1a.xml
 
 Start the first 'slave' broker
-> <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms1b.xml
+
+    > <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms1b.xml
 
 Start the second 'master' broker
-> <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms2a.xml
+
+    > <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms2a.xml
 
 Start the second 'slave' broker
-> <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms2b.xml
+
+    > <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms2b.xml
 
 Start the message consumer
-> mvn -P consumer-nwob-ms
+
+    > mvn -P consumer-nwob-ms
 
 Start the message producer
-> mvn -P producer-nwob-ms
+
+    > mvn -P producer-nwob-ms
