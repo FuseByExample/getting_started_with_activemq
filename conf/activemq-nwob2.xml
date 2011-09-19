@@ -22,8 +22,10 @@
             http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core.xsd
        ">
 
-    <broker xmlns="http://activemq.apache.org/schema/core" brokerName="nwob2"
-            dataDirectory="./target/activemq-data/nwob2" useJmx="true">
+    <broker xmlns="http://activemq.apache.org/schema/core"
+            brokerName="nwob2"
+            dataDirectory="./target/activemq-data/nwob2"
+            useJmx="true">
 
         <managementContext>
             <managementContext createConnector="true" connectorPort="1199"/>

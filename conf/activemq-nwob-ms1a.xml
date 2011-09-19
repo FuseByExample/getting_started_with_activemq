@@ -22,15 +22,17 @@
             http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core.xsd
         ">
 
-    <broker xmlns="http://activemq.apache.org/schema/core" brokerName="nwob-ms1a"
-            dataDirectory="./target/activemq-data/nwob-ms1" useJmx="true">
+    <broker xmlns="http://activemq.apache.org/schema/core"
+            brokerName="nwob-ms1a"
+            dataDirectory="./target/activemq-data/nwob-ms1"
+            useJmx="true">
 
         <managementContext>
             <managementContext createConnector="true" connectorPort="1099"/>
         </managementContext>
 
         <networkConnectors>
-            <networkConnector name="remote"  uri="static:(failover:(tcp://localhost:62626,tcp://localhost:62627))"/>
+            <networkConnector name="remote" uri="static:(failover:(tcp://localhost:62626,tcp://localhost:62627))"/>
         </networkConnectors>
 
         <persistenceAdapter>

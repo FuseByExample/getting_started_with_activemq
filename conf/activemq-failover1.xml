@@ -22,8 +22,10 @@
             http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core.xsd
        ">
 
-    <broker xmlns="http://activemq.apache.org/schema/core" brokerName="brokerOne"
-            dataDirectory="./target/activemq-data/failover" useJmx="true">
+    <broker xmlns="http://activemq.apache.org/schema/core"
+            brokerName="brokerOne"
+            dataDirectory="./target/activemq-data/failover"
+            useJmx="true">
 
         <managementContext>
             <managementContext connectorPort="1099"/>
