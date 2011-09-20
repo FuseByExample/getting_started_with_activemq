@@ -200,6 +200,41 @@
 
         <!-- Network of Broker Producer and Consumer -->
         <profile>
+            <id>broker-nwob1</id>
+
+            <build>
+                <defaultGoal>activemq:run</defaultGoal>
+
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.activemq.tooling</groupId>
+                        <artifactId>maven-activemq-plugin</artifactId>
+                        <configuration>
+                            <configUri>xbean:file:conf/activemq-nwob1.xml</configUri>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>broker-nwob2</id>
+
+            <build>
+                <defaultGoal>activemq:run</defaultGoal>
+
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.activemq.tooling</groupId>
+                        <artifactId>maven-activemq-plugin</artifactId>
+                        <configuration>
+                            <configUri>xbean:file:conf/activemq-nwob2.xml</configUri>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
             <id>consumer-nwob</id>
             <build>
                 <defaultGoal>package</defaultGoal>
@@ -262,6 +297,75 @@
         </profile>
 
         <!-- Network of Broker Master/Slave Producer and Consumer -->
+        <profile>
+            <id>broker-nwob-ms1a</id>
+
+            <build>
+                <defaultGoal>activemq:run</defaultGoal>
+
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.activemq.tooling</groupId>
+                        <artifactId>maven-activemq-plugin</artifactId>
+                        <configuration>
+                            <configUri>xbean:file:conf/activemq-nwob-ms1a.xml</configUri>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>broker-nwob-ms1b</id>
+
+            <build>
+                <defaultGoal>activemq:run</defaultGoal>
+
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.activemq.tooling</groupId>
+                        <artifactId>maven-activemq-plugin</artifactId>
+                        <configuration>
+                            <configUri>xbean:file:conf/activemq-nwob-ms1b.xml</configUri>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>broker-nwob-ms2a</id>
+
+            <build>
+                <defaultGoal>activemq:run</defaultGoal>
+
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.activemq.tooling</groupId>
+                        <artifactId>maven-activemq-plugin</artifactId>
+                        <configuration>
+                            <configUri>xbean:file:conf/activemq-nwob-ms2a.xml</configUri>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>broker-nwob-ms2b</id>
+
+            <build>
+                <defaultGoal>activemq:run</defaultGoal>
+
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.activemq.tooling</groupId>
+                        <artifactId>maven-activemq-plugin</artifactId>
+                        <configuration>
+                            <configUri>xbean:file:conf/activemq-nwob-ms2b.xml</configUri>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
         <profile>
             <id>consumer-nwob-ms</id>
             <build>
