@@ -25,6 +25,11 @@ Start the 'master' broker
 Start the 'slave' broker
 
     > <activemq_home>/bin/activemq console xbean:file:conf/activemq-failover2.xml
+    
+Alternatively you can start ActiveMQ from Maven in separate shells
+
+    shell1> mvn -P broker-failover1
+    shell2> mvn -P broker-failover2
 
 Start the message consumer
 
@@ -58,6 +63,11 @@ Start the first broker
 Start the second broker
 
     > <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob2.xml
+
+Alternatively you can start ActiveMQ from Maven in separate shells
+
+    shell1> mvn -P broker-nwob1
+    shell2> mvn -P broker-nwob2
 
 Start the message consumer
 
@@ -94,6 +104,13 @@ Start the second 'master' broker
 Start the second 'slave' broker
 
     > <activemq_home>/bin/activemq console xbean:file:conf/activemq-nwob-ms2b.xml
+
+Alternatively you can start ActiveMQ from Maven in separate shells
+
+    shell1> mvn -P broker-nwob-ms1a
+    shell2> mvn -P broker-nwob-ms1b
+    shell3> mvn -P broker-nwob-ms2a
+    shell4> mvn -P broker-nwob-ms2b
 
 Start the message consumer
 
