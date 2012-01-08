@@ -28,8 +28,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <activemq.version>5.5.1-fuse-01-06</activemq.version>
-        <xbean.version>3.7</xbean.version>
+        <activemq.version>5.5.1-fuse-01-13</activemq.version>
+        <xbean.version>3.8</xbean.version>
         <slf4j.version>1.5.11</slf4j.version>
     </properties>
 
