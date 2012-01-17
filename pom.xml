@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2011 FuseSource
+  ~ Copyright 2012 FuseSource
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -38,6 +38,12 @@
             <id>fusesource</id>
             <name>FuseSource Release Repository</name>
             <url>http://repo.fusesource.com/maven2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
@@ -46,6 +52,12 @@
             <id>fusesource</id>
             <name>FuseSource Release Repository</name>
             <url>http://repo.fusesource.com/maven2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </pluginRepository>
     </pluginRepositories>
 
@@ -80,7 +92,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>1.2</version>
+                    <version>1.1.1</version>
                 </plugin>
 
                 <plugin>
@@ -386,7 +398,9 @@
                                     <systemProperties>
                                         <systemProperty>
                                             <key>java.naming.provider.url</key>
-                                            <value>failover:(tcp://localhost:61616,tcp://localhost:61617)?randomize=false</value>
+                                            <value>
+                                                failover:(tcp://localhost:61616,tcp://localhost:61617)?randomize=false
+                                            </value>
                                         </systemProperty>
                                     </systemProperties>
                                 </configuration>
@@ -417,7 +431,9 @@
                                     <systemProperties>
                                         <systemProperty>
                                             <key>java.naming.provider.url</key>
-                                            <value>failover:(tcp://localhost:62626,tcp://localhost:62627)?randomize=false</value>
+                                            <value>
+                                                failover:(tcp://localhost:62626,tcp://localhost:62627)?randomize=false
+                                            </value>
                                         </systemProperty>
                                     </systemProperties>
                                 </configuration>

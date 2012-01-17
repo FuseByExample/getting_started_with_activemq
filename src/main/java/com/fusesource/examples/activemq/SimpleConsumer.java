@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 FuseSource
+ * Copyright 2012 FuseSource
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
 
 package com.fusesource.examples.activemq;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import javax.jms.*;
 import javax.naming.Context;
 import javax.naming.InitialContext;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 public class SimpleConsumer {
     private static final Log LOG = LogFactory.getLog(SimpleConsumer.class);

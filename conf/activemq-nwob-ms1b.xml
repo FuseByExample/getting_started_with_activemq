@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2011 FuseSource
+  ~ Copyright 2012 FuseSource
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -32,7 +32,8 @@
         </managementContext>
 
         <networkConnectors>
-            <networkConnector name="remote" uri="static:(failover:(tcp://localhost:62626,tcp://localhost:62627)?randomize=false&amp;maxReconnectAttempts=0)"/>
+            <networkConnector name="remote"
+                              uri="static:(failover:(tcp://localhost:62626,tcp://localhost:62627)?randomize=false&amp;maxReconnectAttempts=0)"/>
         </networkConnectors>
 
         <persistenceAdapter>
