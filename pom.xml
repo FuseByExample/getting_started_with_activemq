@@ -22,16 +22,17 @@
 
     <groupId>com.fusesource.examples</groupId>
     <artifactId>gs-activemq</artifactId>
-    <version>5.5.1</version>
+    <version>5.7.0</version>
 
     <name>Getting Started with ActiveMQ</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <activemq.version>5.5.1.fuse-70-097</activemq.version>
-        <xbean.version>3.9</xbean.version>
-        <slf4j.version>1.6.1</slf4j.version>
+        <activemq.version>5.7.0.fuse-71-047</activemq.version>
+        <xbean.version>3.12</xbean.version>
+        <slf4j-version>1.6.6</slf4j-version>
+        <log4j-version>1.2.17</log4j-version>
     </properties>
 
     <repositories>
@@ -79,10 +80,21 @@
             <version>${xbean.version}</version>
         </dependency>
 
+        <!-- Logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-version}</version>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
-            <version>${slf4j.version}</version>
+            <version>${slf4j-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j-version}</version>
         </dependency>
     </dependencies>
 

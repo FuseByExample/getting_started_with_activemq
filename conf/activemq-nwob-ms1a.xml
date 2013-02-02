@@ -34,7 +34,7 @@
 
         <networkConnectors>
             <networkConnector name="remote"
-                              uri="static:(failover:(tcp://localhost:62626,tcp://localhost:62627)?randomize=false&amp;maxReconnectAttempts=0)"/>
+                              uri="masterslave:(tcp://localhost:62626,tcp://localhost:62627)"/>
         </networkConnectors>
 
         <persistenceAdapter>
