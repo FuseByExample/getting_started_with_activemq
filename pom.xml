@@ -22,14 +22,14 @@
 
     <groupId>com.fusesource.examples</groupId>
     <artifactId>gs-activemq</artifactId>
-    <version>5.7.0</version>
+    <version>5.8.0</version>
 
     <name>Getting Started with ActiveMQ</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <activemq.version>5.7.0.fuse-71-047</activemq.version>
+        <activemq.version>5.8.0.redhat-60020</activemq.version>
         <xbean.version>3.12</xbean.version>
         <slf4j-version>1.6.6</slf4j-version>
         <log4j-version>1.2.17</log4j-version>
@@ -47,6 +47,17 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>fusesource.ea</id>
+            <name>FuseSource Early Access</name>
+            <url>http://repo.fusesource.com/nexus/content/groups/ea/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -60,12 +71,23 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+        <pluginRepository>
+            <id>fusesource.ea</id>
+            <name>FuseSource Early Access</name>
+            <url>http://repo.fusesource.com/nexus/content/groups/ea/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
     </pluginRepositories>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-core</artifactId>
+            <artifactId>activemq-client</artifactId>
             <version>${activemq.version}</version>
         </dependency>
         <dependency>
@@ -109,7 +131,7 @@
 
                 <plugin>
                     <groupId>org.apache.activemq.tooling</groupId>
-                    <artifactId>maven-activemq-plugin</artifactId>
+                    <artifactId>activemq-maven-plugin</artifactId>
                     <version>${activemq.version}</version>
                     <dependencies>
                         <!-- dependency to pick up resources (e.g. log4j.properties) on classpath -->

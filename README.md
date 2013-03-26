@@ -9,15 +9,15 @@ Notes:
 
 * all instructions assume you are executing from the top level directory of this project
 * it is assumed you have Apache Maven installed, and that you are familiar with its usage
-* assumes you are using Apache ActiveMQ 5.7.0 or later, or Fuse MQ Enterprise 7.1.0 or later
+* assumes you are using Apache ActiveMQ 5.8.0 or later, or JBoss A-MQ 6.0.0 or later
 
-Note: All of this code will run correctly against either Apache ActiveMQ 5.7.0 or Fuse MQ Enterprise 7.1.0 as both
-internally use the same ActiveMQ 5.7.0 code base. The instructions on how to start (command line) the brokers from an
-ActiveMQ install will **not** work with Fuse MQ Enterprise (e.g. `bin/fusemq`) as Fuse MQ Enterprise has ActiveMQ
+Note: All of this code will run correctly against either Apache ActiveMQ 5.8.0 or JBoss A-MQ 6.0.0 as both
+internally use the same ActiveMQ 5.8.0 code base. The instructions on how to start (command line) the brokers from an
+ActiveMQ install will **not** work with JBoss A-MQ (e.g. `bin/amq`) as JBoss A-MQ has ActiveMQ
 deployed within an Apache Karaf container to allow for runtime updates to configuration information (versus needing to
 restart the broker in the case on Apache ActiveMQ). There are additional steps required to use these provided broker
-configuration files and deploy them correctly to Fuse MQ Enterprise with its Fuse Fabric based configuration system.
-Fuse MQ Enterprise's install contains an `extras` directory with a support version of the Apache ActiveMQ 5.7.0 binary
+configuration files and deploy them correctly to JBoss A-MQ with its Fabric based configuration system.
+JBoss A-MQ's install contains an `extras` directory with a support version of the Apache ActiveMQ 5.8.0 binary
 install.
 
 The Master-Slave configuration enables quick activation of a broker instance to continue processing of messages stored
