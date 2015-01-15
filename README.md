@@ -9,9 +9,9 @@ Notes:
 
 * all instructions assume you are executing from the top level directory of this project
 * it is assumed you have Apache Maven installed, and that you are familiar with its usage
-* assumes you are using Apache ActiveMQ 5.9.0 or later, or JBoss A-MQ 6.1.0 or later
+* assumes you are using Apache ActiveMQ 5.9.0 or later, or JBoss A-MQ 6.2.0 or later
 
-Note: All of this code will run correctly against either Apache ActiveMQ 5.9.0 or JBoss A-MQ 6.1.0 as both
+Note: All of this code will run correctly against either Apache ActiveMQ 5.9.0 or JBoss A-MQ 6.2.0 as both
 internally use the same ActiveMQ 5.9.0 code base. The instructions on how to start (command line) the brokers from an
 ActiveMQ install will **not** work with JBoss A-MQ (e.g. `bin/amq`) as JBoss A-MQ has ActiveMQ
 deployed within an Apache Karaf container to allow for runtime updates to configuration information (versus needing to
