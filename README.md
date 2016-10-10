@@ -1,3 +1,7 @@
+NOTE: This project is not supported on JBoss Fuse version 6.3 or later
+-----------------------------------------------------------------------
+
+
 Getting Started with ActiveMQ
 =============================
 
